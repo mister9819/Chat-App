@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.rice.comp504.model</OriginalElement>
+  <nodes>
+    <node x="342.0" y="790.0">edu.rice.comp504.model.message.ActionMessage</node>
+    <node x="1600.0144444444445" y="722.0">edu.rice.comp504.model.store.UserStore</node>
+    <node x="0.0" y="755.0">edu.rice.comp504.model.message.ImageMessage</node>
+    <node x="1451.9999999999998" y="1214.0">edu.rice.comp504.model.factory.ChatRoomFactory</node>
+    <node x="624.9999999999999" y="1192.0">edu.rice.comp504.model.store.ChatRoomStore</node>
+    <node x="1517.2749999999999" y="0.0">edu.rice.comp504.model.User</node>
+    <node x="1768.0144444444445" y="1249.0">edu.rice.comp504.model.chatroom.PublicChatRoom</node>
+    <node x="969.6274074074073" y="1506.5">edu.rice.comp504.model.store.ChatAppStore</node>
+    <node x="172.0" y="790.0">edu.rice.comp504.model.message.DirectMessage</node>
+    <node x="685.9999999999999" y="777.5">edu.rice.comp504.model.command.IMessageCmd</node>
+    <node x="1242.9999999999998" y="1236.5">edu.rice.comp504.model.command.IChatRoomCmd</node>
+    <node x="1950.0144444444445" y="1214.0">edu.rice.comp504.model.chatroom.PrivateChatRoom</node>
+    <node x="883.9999999999999" y="755.0">edu.rice.comp504.model.factory.MessageFactory</node>
+    <node x="1010.9999999999999" y="1203.0">edu.rice.comp504.model.store.MessageService</node>
+    <node x="2094.7644444444445" y="777.5">edu.rice.comp504.model.command.IUserCmd</node>
+    <node x="1112.0" y="491.0">edu.rice.comp504.model.chatroom.AChatRoom</node>
+    <node x="2262.7644444444445" y="755.0">edu.rice.comp504.model.factory.UserFactory</node>
+    <node x="890.4999999999999" y="110.0">edu.rice.comp504.model.message.AMessage</node>
+    <node x="514.9999999999999" y="755.0">edu.rice.comp504.model.message.TextMessage</node>
+    <node x="1196.2774074074073" y="1419.0">edu.rice.comp504.model.ChatRoomAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.rice.comp504.model.factory.ChatRoomFactory" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="1566.9999999999998" y="1171.0" />
+      <point x="1337.9522222222222" y="1171.0" />
+      <point x="1337.9522222222222" y="1161.0" />
+      <point x="1285.0" y="1161.0" />
+      <point x="0.0" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.ChatRoomStore" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="TO_MANY">
+      <point x="-91.5" y="-72.5" />
+      <point x="716.4999999999999" y="1161.0" />
+      <point x="1169.6666666666665" y="1161.0" />
+      <point x="-115.33333333333333" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.command.IUserCmd" target="edu.rice.comp504.model.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="2168.2644444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.ChatAppStore" target="edu.rice.comp504.model.store.UserStore" relationship="DEPENDENCY">
+      <point x="66.0" y="-50.5" />
+      <point x="1134.6274074074072" y="1378.0" />
+      <point x="1692.5" y="1378.0" />
+      <point x="1692.5" y="1141.0" />
+      <point x="1745.5144444444445" y="1141.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.command.IChatRoomCmd" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="1337.9522222222222" y="1161.0" />
+      <point x="1285.0" y="1161.0" />
+      <point x="0.0" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.UserStore" target="edu.rice.comp504.model.User" relationship="TO_MANY">
+      <point x="-72.75" y="-83.5" />
+      <point x="1672.7644444444445" y="471.0" />
+      <point x="1290.0" y="471.0" />
+      <point x="1290.0" y="451.0" />
+      <point x="1562.7749999999999" y="451.0" />
+      <point x="-45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.ChatAppStore" target="edu.rice.comp504.model.store.MessageService" relationship="DEPENDENCY">
+      <point x="0.0" y="-50.5" />
+      <point x="1068.6274074074072" y="1398.0" />
+      <point x="1116.5" y="1398.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.ChatAppStore" target="edu.rice.comp504.model.store.ChatRoomStore" relationship="DEPENDENCY">
+      <point x="-66.0" y="-50.5" />
+      <point x="1002.6274074074073" y="1368.0" />
+      <point x="807.9999999999999" y="1368.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ChatRoomAdapter" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="DEPENDENCY">
+      <point x="-2.8421709430404007E-14" y="-138.0" />
+      <point x="1373.2774074074073" y="1358.0" />
+      <point x="1232.4999999999998" y="1358.0" />
+      <point x="1232.4999999999998" y="1171.0" />
+      <point x="1337.9522222222222" y="1171.0" />
+      <point x="1337.9522222222222" y="1161.0" />
+      <point x="1285.0" y="1161.0" />
+      <point x="0.0" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.UserStore" target="edu.rice.comp504.model.User" relationship="DEPENDENCY">
+      <point x="72.75" y="-83.5" />
+      <point x="1818.2644444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.ActionMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="418.5" y="471.0" />
+      <point x="332.75" y="471.0" />
+      <point x="332.75" y="461.0" />
+      <point x="922.9999999999999" y="461.0" />
+      <point x="-65.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.AChatRoom" target="edu.rice.comp504.model.message.AMessage" relationship="DEPENDENCY">
+      <point x="-138.39999999999998" y="-314.5" />
+      <point x="1146.6" y="471.0" />
+      <point x="987.9999999999999" y="471.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ChatRoomAdapter" target="edu.rice.comp504.model.store.MessageService" relationship="DEPENDENCY">
+      <point x="-70.80000000000004" y="-138.0" />
+      <point x="1302.4774074074073" y="1398.0" />
+      <point x="1116.5" y="1398.0" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PrivateChatRoom" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="GENERALIZATION">
+      <point x="-44.75" y="-50.5" />
+      <point x="1994.7644444444445" y="1161.0" />
+      <point x="1790.75" y="1161.0" />
+      <point x="1790.75" y="1151.0" />
+      <point x="1400.3333333333333" y="1151.0" />
+      <point x="115.33333333333331" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.DirectMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="247.0" y="471.0" />
+      <point x="332.75" y="471.0" />
+      <point x="332.75" y="461.0" />
+      <point x="922.9999999999999" y="461.0" />
+      <point x="-65.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.factory.MessageFactory" target="edu.rice.comp504.model.message.AMessage" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.AChatRoom" target="edu.rice.comp504.model.message.AMessage" relationship="TO_MANY">
+      <point x="-69.19999999999996" y="-314.5" />
+      <point x="1215.8" y="461.0" />
+      <point x="1053.0" y="461.0" />
+      <point x="65.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ChatRoomAdapter" target="edu.rice.comp504.model.store.ChatRoomStore" relationship="DEPENDENCY">
+      <point x="-141.60000000000002" y="-138.0" />
+      <point x="1231.6774074074074" y="1368.0" />
+      <point x="807.9999999999999" y="1368.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.factory.UserFactory" target="edu.rice.comp504.model.User" relationship="CREATE">
+      <point x="0.0" y="-50.5" />
+      <point x="2338.2644444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PrivateChatRoom" target="edu.rice.comp504.model.User" relationship="DEPENDENCY">
+      <point x="44.75" y="-50.5" />
+      <point x="2084.2644444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PublicChatRoom" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="GENERALIZATION">
+      <point x="-40.5" y="-15.5" />
+      <point x="1808.5144444444445" y="1161.0" />
+      <point x="1790.75" y="1161.0" />
+      <point x="1790.75" y="1151.0" />
+      <point x="1400.3333333333333" y="1151.0" />
+      <point x="115.33333333333331" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.AChatRoom" target="edu.rice.comp504.model.User" relationship="TO_MANY">
+      <point x="2.8421709430404007E-14" y="-314.5" />
+      <point x="1285.0" y="471.0" />
+      <point x="1290.0" y="471.0" />
+      <point x="1290.0" y="451.0" />
+      <point x="1562.7749999999999" y="451.0" />
+      <point x="-45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PublicChatRoom" target="edu.rice.comp504.model.User" relationship="DEPENDENCY">
+      <point x="40.5" y="-15.5" />
+      <point x="1889.5144444444445" y="1171.0" />
+      <point x="1901.5144444444445" y="1171.0" />
+      <point x="1901.5144444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ChatRoomAdapter" target="edu.rice.comp504.model.store.UserStore" relationship="DEPENDENCY">
+      <point x="70.79999999999998" y="-138.0" />
+      <point x="1444.0774074074072" y="1388.0" />
+      <point x="1692.5" y="1388.0" />
+      <point x="1692.5" y="1141.0" />
+      <point x="1745.5144444444445" y="1141.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.store.ChatRoomStore" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="CREATE">
+      <point x="91.5" y="-72.5" />
+      <point x="899.4999999999999" y="1171.0" />
+      <point x="1337.9522222222222" y="1171.0" />
+      <point x="1337.9522222222222" y="1161.0" />
+      <point x="1285.0" y="1161.0" />
+      <point x="0.0" y="314.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.AChatRoom" target="edu.rice.comp504.model.User" relationship="TO_ONE">
+      <point x="69.20000000000002" y="-314.5" />
+      <point x="1354.1999999999998" y="471.0" />
+      <point x="1290.0" y="471.0" />
+      <point x="1290.0" y="451.0" />
+      <point x="1562.7749999999999" y="451.0" />
+      <point x="-45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.TextMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="590.4999999999999" y="471.0" />
+      <point x="332.75" y="471.0" />
+      <point x="332.75" y="461.0" />
+      <point x="922.9999999999999" y="461.0" />
+      <point x="-65.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.AChatRoom" target="edu.rice.comp504.model.User" relationship="DEPENDENCY">
+      <point x="138.39999999999998" y="-314.5" />
+      <point x="1423.3999999999999" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.ImageMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="76.0" y="471.0" />
+      <point x="332.75" y="471.0" />
+      <point x="332.75" y="461.0" />
+      <point x="922.9999999999999" y="461.0" />
+      <point x="-65.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.command.IMessageCmd" target="edu.rice.comp504.model.message.AMessage" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="774.9999999999999" y="471.0" />
+      <point x="987.9999999999999" y="471.0" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.ChatRoomAdapter" target="edu.rice.comp504.model.User" relationship="CREATE">
+      <point x="141.60000000000002" y="-138.0" />
+      <point x="1514.8774074074074" y="1398.0" />
+      <point x="2252.2644444444445" y="1398.0" />
+      <point x="2252.2644444444445" y="461.0" />
+      <point x="2055.627407407407" y="461.0" />
+      <point x="2055.627407407407" y="451.0" />
+      <point x="1653.7749999999999" y="451.0" />
+      <point x="45.5" y="215.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5499999999999999" showDependencies="true" x="849.3636363636369" y="1165.4545454545455" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

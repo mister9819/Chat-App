@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.rice.comp504.model.command.IUserCmd</OriginalElement>
+  <nodes>
+    <node x="398.0" y="1299.0">edu.rice.comp504.model.store.UserStore</node>
+    <node x="801.0" y="1299.0">edu.rice.comp504.model.store.ChatRoomStore</node>
+    <node x="997.0" y="0.0">edu.rice.comp504.model.store.ChatAppStore</node>
+    <node x="248.0" y="1142.0">edu.rice.comp504.model.message.DirectMessage</node>
+    <node x="1478.0" y="1750.0">edu.rice.comp504.model.command.IChatRoomCmd</node>
+    <node x="1983.0" y="1750.0">edu.rice.comp504.model.command.IUserCmd</node>
+    <node x="365.00000000000006" y="0.0">edu.rice.comp504.model.chatroom.AChatRoom</node>
+    <node x="0.0" y="1750.0">edu.rice.comp504.model.factory.UserFactory</node>
+    <node x="2140.0" y="1142.0">edu.rice.comp504.model.message.LinkMessage</node>
+    <node x="1045.0" y="848.0">edu.rice.comp504.model.message.AMessage</node>
+    <node x="1235.0" y="1750.0">edu.rice.comp504.controller.ChatAppController</node>
+    <node x="1390.0" y="1142.0">edu.rice.comp504.model.message.TextMessage</node>
+    <node x="101.5" y="1604.0">edu.rice.comp504.model.NullUser</node>
+    <node x="1007.0" y="1142.0">edu.rice.comp504.model.message.ActionMessage</node>
+    <node x="747.0" y="680.0">edu.rice.comp504.model.chatroom.NullChatRoom</node>
+    <node x="1759.0" y="1142.0">edu.rice.comp504.model.message.ImageMessage</node>
+    <node x="467.0" y="1750.0">edu.rice.comp504.model.factory.ChatRoomFactory</node>
+    <node x="0.0" y="1299.0">edu.rice.comp504.model.User</node>
+    <node x="398.00000000000006" y="714.0">edu.rice.comp504.model.chatroom.PublicChatRoom</node>
+    <node x="628.0" y="1153.5">edu.rice.comp504.model.message.InvitationMessage</node>
+    <node x="1500.0" y="0.0">edu.rice.comp504.adapter.ChatRoomAdapter</node>
+    <node x="934.0" y="1750.0">edu.rice.comp504.adapter.WebSocketAdapter</node>
+    <node x="1735.0" y="1750.0">edu.rice.comp504.model.command.IMessageCmd</node>
+    <node x="0.0" y="702.5">edu.rice.comp504.model.chatroom.PrivateChatRoom</node>
+    <node x="1832.0" y="1299.0">edu.rice.comp504.model.factory.MessageFactory</node>
+    <node x="1316.0" y="1299.0">edu.rice.comp504.model.store.MessageService</node>
+    <node x="0.0" y="1131.0">edu.rice.comp504.model.message.NullMessage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.rice.comp504.model.message.ActionMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.ImageMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="1939.5" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PublicChatRoom" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="GENERALIZATION">
+      <point x="0.0" y="-27.5" />
+      <point x="0.0" y="315.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.LinkMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="2314.0" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.PrivateChatRoom" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="189.0" y="655.0" />
+      <point x="562.5" y="655.0" />
+      <point x="0.0" y="315.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.DirectMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="428.0" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.TextMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="1564.5" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.InvitationMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="807.5" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.chatroom.NullChatRoom" target="edu.rice.comp504.model.chatroom.AChatRoom" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="849.5" y="655.0" />
+      <point x="562.5" y="655.0" />
+      <point x="0.0" y="315.0" />
+    </edge>
+    <edge source="edu.rice.comp504.model.NullUser" target="edu.rice.comp504.model.User" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="edu.rice.comp504.model.message.NullMessage" target="edu.rice.comp504.model.message.AMessage" relationship="GENERALIZATION">
+      <point x="0.0" y="-61.5" />
+      <point x="114.0" y="1106.0" />
+      <point x="1188.5" y="1106.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.4423095535951615" showDependencies="false" x="531.6349311954091" y="342.7403372716311" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,220 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Login</title>
+    <meta name="description" content="A simple HTML5 Template for new projects.">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:image" content="image.png">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Src:   https://www.bootdey.com/snippets/view/chat-app#css-->
+    <link href="login_style.css" rel="stylesheet">
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container pb-5 mb-sm-5">
+    <div class="row pt-5">
+        <div class="col-md-5 pt-5 pt-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h4 mb-1">Sign in</h2>
+                    <hr/>
+                    <form class="needs-validation" id="login">
+                        <div id="wrong_credentials" class="alert alert-danger" role="alert">
+                            Incorrect username or password.
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend"><span class="input-group-text"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-user"><path
+                                    d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7"
+                                                                                                 r="4"></circle></svg></span>
+                            </div>
+                            <input class="form-control" type="text" placeholder="Username" id="username" required>
+                            <div class="invalid-feedback">Username not found!</div>
+                        </div>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend"><span class="input-group-text"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                        </svg></span></div>
+                            <input class="form-control" type="password" placeholder="Password" id="password" required>
+                            <div class="invalid-feedback">Please enter valid password!</div>
+                        </div>
+                        <!--                        <div class="d-flex flex-wrap justify-content-between">-->
+                        <!--                            <div class="custom-control custom-checkbox">-->
+                        <!--                                <input class="custom-control-input" type="checkbox" checked="" id="remember_me">-->
+                        <!--                                <label class="custom-control-label" for="remember_me">Remember me</label>-->
+                        <!--                            </div>-->
+                        <!--                            <a class="nav-link-inline font-size-sm"-->
+                        <!--                               href="account-password-recovery.html">Forgot-->
+                        <!--                                password?</a>-->
+                        <!--                        </div>-->
+                        <!--                        <hr class="mt-4">-->
+                        <div class="text-right pt-4">
+                            <button class="btn btn-primary" type="submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 pt-5 pt-sm-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h4 mb-3">No account? Sign up</h2>
+                    <hr/>
+                    <div id="wrong_passwords" class="alert alert-danger" role="alert">
+                        Passwords don't match.
+                    </div>
+                    <div id="usernameTaken" class="alert alert-danger" role="alert" style="display: none">
+                        Username taken
+                    </div>
+                    <form class="needs-validation" onsubmit="return false">
+                        <label>Choose an avatar:</label>
+                        <div id="plist" class="people-list mx-3">
+                            <ul class="row list-unstyled chat-list mt-2 mb-0">
+                                <input style="display:none;" type="radio" name="test" value="small" checked>
+                                <li class="clearfix border border-secondary border-4">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar8.png"
+                                         alt="avatar">
+                                </li>
+                                <li class="clearfix">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                         alt="avatar">
+                                </li>
+                                <li class="clearfix">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                         alt="avatar">
+                                </li>
+                                <li class="clearfix">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                                         alt="avatar">
+                                </li>
+                                <li class="clearfix">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar5.png"
+                                         alt="avatar">
+                                </li>
+                                <li class="clearfix">
+                                    <img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar6.png"
+                                         alt="avatar">
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-user"><path
+                                        d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7"
+                                                                                                     r="4"></circle></svg></span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Username" id="regUsername"
+                                       required>
+                                <div class="invalid-feedback">Please enter valid username!</div>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                        </svg></span></div>
+                                <input class="form-control" id="regPassword2" type="password" placeholder="Password" required>
+                                <div class="invalid-feedback">Please enter valid password!</div>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-check-circle"><path
+                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline
+                                        points="22 4 12 14.01 9 11.01"></polyline></svg></span></div>
+                                <input class="form-control" type="password" placeholder="Confirm password"
+                                       id="regPassword" required>
+                                <div class="invalid-feedback">Passwords don't match!</div>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12"
+                                                                                                     r="10"></circle><line
+                                        x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12"
+                                                                                     y2="8"></line></svg></span>
+                                </div>
+                                <input class="form-control" type="number" placeholder="Age" id="regAge">
+                                <div class="invalid-feedback">Please enter valid age!</div>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-book"><path
+                                        d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path
+                                        d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="School" id="regSchool">
+                                <div class="invalid-feedback">Please enter valid school name!</div>
+                            </div>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend"><span class="input-group-text"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-music"><path
+                                        d="M9 17H5a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm12-2h-4a2 2 0 0 0-2 2 2 2 0 0 0 2 2h2a2 2 0 0 0 2-2z"></path><polyline
+                                        points="9 17 9 5 21 3 21 15"></polyline></svg></span>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Interests" id="regInterests">
+                                <div class="invalid-feedback">Please enter valid interests!</div>
+                            </div>
+                        </div>
+                        <div class="text-right pt-4">
+                            <button class="btn btn-primary" type="submit" onclick="return signup($('#regUsername').val(),$('#regPassword2').val(), $('#regPassword').val(),$('#regAge').val(),
+                             $('#regSchool').val(),$('#regInterests').val())">Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+
+    $(function () {
+        $(".clearfix").click(function () {
+            $(this).addClass("border border-secondary border-4");
+            $(this).siblings().removeClass("border border-secondary border-4");
+        });
+    });
+
+</script>
+<script src="js/login.js"></script>
+</html>
